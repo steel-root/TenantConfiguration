@@ -1,0 +1,62 @@
+﻿{
+    "@odata.type":  "#microsoft.graph.ipNamedLocation",
+    "id":  "01673094-007b-4a87-b122-9177ed0498c8",
+    "displayName":  "Zscaler Gov",
+    "modifiedDateTime":  "2021-08-26T13:28:22.062941Z",
+    "createdDateTime":  "2021-08-26T13:28:22.062941Z",
+    "isTrusted":  false,
+    "ipRanges":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "165.225.3.0/24"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.6.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.18.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "165.225.46.0/24"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "165.225.48.0/24"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.4.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.8.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.22.0/24"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.16.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.20.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.10.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.12.0/23"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "136.226.14.0/23"
+                     }
+                 ]
+}
