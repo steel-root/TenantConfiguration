@@ -38,7 +38,7 @@
 
 
 
-# FAQ:
+# FAQ
 ## “Running Scripts is disabled on this system”:
 I’m receiving an error when I run the script. It says “SteelRootConditionalAccess cannot be loaded because running scripts is disabled on this system.”
 
@@ -46,7 +46,7 @@ To resolve this error, run the following command:
 ```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned```
 
 ## AVD Policies throw an error when chosen:
-To resolve this error, you must already have deployed AVD. In order for the application restriction as an option, it must first be deployed.
+To resolve this error, you must first deploy AVD. The conditional access policy is utilizing an Application GUID which will not be available if AVD isn't in use.
 
 # License
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
