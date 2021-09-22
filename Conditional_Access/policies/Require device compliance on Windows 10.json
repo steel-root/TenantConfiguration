@@ -1,0 +1,69 @@
+﻿{
+    "id":  "7fdfe195-e3b8-483d-af60-5c7d19f4b259",
+    "displayName":  "Require device compliance on Windows 10",
+    "createdDateTime":  "2021-02-09T16:06:58.081717Z",
+    "modifiedDateTime":  "2021-04-26T21:20:14.3340699Z",
+    "state":  "enabledForReportingButNotEnforced",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "browser",
+                                              "mobileAppsAndDesktopClients"
+                                          ],
+                       "locations":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "All"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 },
+                       "platforms":  {
+                                         "includePlatforms":  [
+                                                                  "windows"
+                                                              ],
+                                         "excludePlatforms":  [
+
+                                                              ]
+                                     }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "compliantDevice"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}

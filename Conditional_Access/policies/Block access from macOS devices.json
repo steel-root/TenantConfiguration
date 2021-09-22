@@ -1,0 +1,71 @@
+﻿{
+    "id":  "98727820-e51c-4ede-9c44-6892ad1ebe9f",
+    "displayName":  "Block access from macOS devices",
+    "createdDateTime":  "2021-08-26T12:25:53.2655614Z",
+    "modifiedDateTime":  null,
+    "state":  "enabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "all"
+                                          ],
+                       "locations":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ],
+                                            "includeAuthenticationContextClassReferences":  [
+
+                                                                                            ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "All"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 },
+                       "platforms":  {
+                                         "includePlatforms":  [
+                                                                  "macOS"
+                                                              ],
+                                         "excludePlatforms":  [
+
+                                                              ]
+                                     }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "block"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}

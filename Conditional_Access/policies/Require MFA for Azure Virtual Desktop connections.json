@@ -1,0 +1,74 @@
+{
+    "id":  "52656ab9-1048-43d3-8d38-fd813089e3b2",
+    "displayName":  "Require MFA for Azure Virtual Desktop connections",
+    "createdDateTime":  "2021-08-03T11:38:48.2599799Z",
+    "modifiedDateTime":  null,
+    "state":  "enabled",
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "mobileAppsAndDesktopClients"
+                                          ],
+                       "platforms":  null,
+                       "locations":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "9cdead84-a844-4324-93f2-b2e6bb768d07"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ],
+                                            "includeAuthenticationContextClassReferences":  [
+
+                                                                                            ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+                                                           "270ac0cf-aeee-4eb8-a0ef-c09b99db10b7",
+                                                           "6095badc-c163-45de-8ac6-a6ebd96c45c0"
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "mfa"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      },
+    "sessionControls":  {
+                            "applicationEnforcedRestrictions":  null,
+                            "cloudAppSecurity":  null,
+                            "persistentBrowser":  null,
+                            "signInFrequency":  {
+                                                    "value":  8,
+                                                    "type":  "hours",
+                                                    "isEnabled":  true
+                                                }
+                        }
+}

@@ -1,0 +1,71 @@
+{
+    "id":  "9e5cdcf4-8990-4d46-8102-59468494d03b",
+    "displayName":  "Block Non-Zscaler Connections",
+    "createdDateTime":  null,
+    "modifiedDateTime":  "2020-11-06T21:50:35.588141Z",
+    "state":  "disabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "all"
+                                          ],
+                       "platforms":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ],
+                                            "includeAuthenticationContextClassReferences":  [
+
+                                                                                            ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "None"
+                                                      ],
+                                     "excludeUsers":  [
+                                                          
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 },
+                       "locations":  {
+                                         "includeLocations":  [
+                                                                  "All"
+                                                              ],
+                                         "excludeLocations":  [
+                                                                  "{{ZSCALER_LOCATIONS_GUID}}"
+                                                              ]
+                                     }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "block"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}

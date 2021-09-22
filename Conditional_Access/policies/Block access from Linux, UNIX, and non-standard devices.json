@@ -1,0 +1,72 @@
+{
+    "id":  "9ed995fd-0621-44b4-b940-ee861c9a8dfd",
+    "displayName":  "Block access from Android devices",
+    "createdDateTime":  "2021-08-18T21:32:50.0921745Z",
+    "modifiedDateTime":  null,
+    "state":  "enabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "all"
+                                          ],
+                       "locations":  null,
+                       "devices":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ],
+                                            "includeAuthenticationContextClassReferences":  [
+
+                                                                                            ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "All"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 },
+                       "platforms":  {
+                                         "includePlatforms":  [
+                                                                  "android"
+                                                              ],
+                                         "excludePlatforms":  [
+
+                                                              ]
+                                     }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "block"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}

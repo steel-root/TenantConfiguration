@@ -1,0 +1,72 @@
+﻿{
+    "id":  "b8689b82-7699-4203-8db3-48f6f130f135",
+    "displayName":  "Block access from non-US countries",
+    "createdDateTime":  "2021-06-22T14:07:51.8560009Z",
+    "modifiedDateTime":  null,
+    "state":  "enabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "browser",
+                                              "mobileAppsAndDesktopClients"
+                                          ],
+                       "platforms":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ],
+                                            "includeAuthenticationContextClassReferences":  [
+
+                                                                                            ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "All"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 },
+                       "locations":  {
+                                         "includeLocations":  [
+                                                                  "{{LOCATIONS_GUID}}"
+                                                              ],
+                                         "excludeLocations":  [
+
+                                                              ]
+                                     }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "block"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}

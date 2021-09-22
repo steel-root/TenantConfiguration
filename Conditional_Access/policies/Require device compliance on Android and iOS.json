@@ -1,0 +1,72 @@
+﻿{
+    "id":  "0abd12f2-20e2-4ee0-aa4c-77610244a3ab",
+    "displayName":  "Require device compliance on Android and iOS",
+    "createdDateTime":  "2021-02-09T16:05:42.0989216Z",
+    "modifiedDateTime":  "2021-04-26T21:20:27.271211Z",
+    "state":  "enabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "browser",
+                                              "mobileAppsAndDesktopClients"
+                                          ],
+                       "locations":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "All"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 },
+                       "platforms":  {
+                                         "includePlatforms":  [
+                                                                  "android",
+                                                                  "iOS"
+                                                              ],
+                                         "excludePlatforms":  [
+
+                                                              ]
+                                     }
+                   },
+    "grantControls":  {
+                          "operator":  "AND",
+                          "builtInControls":  [
+                                                  "mfa",
+                                                  "compliantDevice",
+                                                  "approvedApplication"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}

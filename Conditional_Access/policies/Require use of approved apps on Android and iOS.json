@@ -1,0 +1,70 @@
+﻿{
+    "id":  "a0e1d875-a8e3-4505-a443-0f63b47fdf70",
+    "displayName":  "Require use of approved apps on Android and iOS",
+    "createdDateTime":  "2021-03-31T19:32:18.6881858Z",
+    "modifiedDateTime":  "2021-04-26T21:35:24.2608703Z",
+    "state":  "enabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "browser",
+                                              "mobileAppsAndDesktopClients"
+                                          ],
+                       "locations":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "Office365"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "All"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+                                                           "{{BREAKGLASS_ADMIN_GROUP}}"
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 },
+                       "platforms":  {
+                                         "includePlatforms":  [
+                                                                  "android",
+                                                                  "iOS"
+                                                              ],
+                                         "excludePlatforms":  [
+
+                                                              ]
+                                     }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "approvedApplication"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}

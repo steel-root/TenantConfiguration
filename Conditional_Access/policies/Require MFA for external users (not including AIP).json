@@ -1,0 +1,62 @@
+﻿{
+    "id":  "b2625c31-da43-4e5c-9637-36b2256cdf9b",
+    "displayName":  "Require MFA for external users (not including AIP)",
+    "createdDateTime":  "2020-08-29T19:54:11.2112844Z",
+    "modifiedDateTime":  "2021-04-23T21:51:03.2395999Z",
+    "state":  "enabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "browser",
+                                              "mobileAppsAndDesktopClients"
+                                          ],
+                       "platforms":  null,
+                       "locations":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+                                                                        "00000012-0000-0000-c000-000000000000"
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "GuestsOrExternalUsers"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "mfa"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}
