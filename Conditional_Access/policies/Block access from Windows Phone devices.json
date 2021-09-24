@@ -3,7 +3,7 @@
     "displayName":  "Block access from Windows Phone devices",
     "createdDateTime":  "2021-08-26T12:26:41.6479462Z",
     "modifiedDateTime":  null,
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
