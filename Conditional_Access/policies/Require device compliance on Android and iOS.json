@@ -3,7 +3,7 @@
     "displayName":  "Require device compliance on Android and iOS",
     "createdDateTime":  "2021-02-09T16:05:42.0989216Z",
     "modifiedDateTime":  "2021-04-26T21:20:27.271211Z",
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
