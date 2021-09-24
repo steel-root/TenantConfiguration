@@ -3,7 +3,7 @@
     "displayName":  "Block access from iOS devices",
     "createdDateTime":  "2021-08-26T12:24:54.6524606Z",
     "modifiedDateTime":  null,
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
