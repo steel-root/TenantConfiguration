@@ -32,7 +32,7 @@ Add-Type -AssemblyName PresentationFramework
 
 #Install the Public Preview of AAD's PowerShell module, if it's not already.
 if (!(Get-InstalledModule | Where-Object name -Match "AzureADPreview")){
-    Install-Module AzureADPreview -Scope CurrentUser -Force
+    Install-Module AzureADPreview -Scope CurrentUser -Force -AllowClobber
 }
 #If the module is installed, update it
 else{
