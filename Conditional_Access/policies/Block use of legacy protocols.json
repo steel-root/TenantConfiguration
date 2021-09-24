@@ -1,9 +1,9 @@
-﻿{
+{
     "id":  "2dfeb096-cd5b-40b7-b18c-3c22fa7620e9",
     "displayName":  "Block use of legacy protocols",
     "createdDateTime":  "2020-08-29T19:16:23.1830981Z",
     "modifiedDateTime":  "2021-04-23T21:50:39.9074212Z",
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
