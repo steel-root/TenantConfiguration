@@ -3,7 +3,7 @@
     "displayName":  "Require device compliance on Windows 10",
     "createdDateTime":  "2021-02-09T16:06:58.081717Z",
     "modifiedDateTime":  "2021-04-26T21:20:14.3340699Z",
-    "state":  "enabledForReportingButNotEnforced",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
