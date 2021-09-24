@@ -3,7 +3,7 @@
     "displayName":  "Require MFA for all internal users on all cloud apps",
     "createdDateTime":  null,
     "modifiedDateTime":  "2021-04-23T21:50:17.4680095Z",
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
