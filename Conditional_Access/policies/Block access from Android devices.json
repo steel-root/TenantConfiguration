@@ -3,7 +3,7 @@
     "displayName":  "Block access from Android devices",
     "createdDateTime":  "2021-08-26T12:23:37.3851724Z",
     "modifiedDateTime":  null,
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
