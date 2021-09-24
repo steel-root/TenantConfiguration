@@ -3,7 +3,7 @@
     "displayName":  "Require MFA for Azure Virtual Desktop connections",
     "createdDateTime":  "2021-08-03T11:38:48.2599799Z",
     "modifiedDateTime":  null,
-    "state":  "enabled",
+    "state":  "disabled",
     "conditions":  {
                        "signInRiskLevels":  [
 
