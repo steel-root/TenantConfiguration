@@ -55,6 +55,9 @@ To resolve this error, run the following command:
 ### AVD Policies throw an error when chosen:
 To resolve this error, you must first deploy AVD. The conditional access policy is utilizing an Application GUID which will not be available if AVD isn't in use.
 
+### I've run the script, but the policies are not working:
+All policies added by the script are built without being enabled. We suggest thoroughly reviewing each policy added to confirm it meets your requirements prior to enabling.  
+
 # License
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
