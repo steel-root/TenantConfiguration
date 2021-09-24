@@ -3,7 +3,7 @@
     "displayName":  "Block access from macOS devices",
     "createdDateTime":  "2021-08-26T12:25:53.2655614Z",
     "modifiedDateTime":  null,
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
