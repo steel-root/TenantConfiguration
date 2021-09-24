@@ -3,7 +3,7 @@
     "displayName":  "Require MFA for external users (not including AIP)",
     "createdDateTime":  "2020-08-29T19:54:11.2112844Z",
     "modifiedDateTime":  "2021-04-23T21:51:03.2395999Z",
-    "state":  "enabled",
+    "state":  "disabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
