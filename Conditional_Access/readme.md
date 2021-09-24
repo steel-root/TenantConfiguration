@@ -1,8 +1,15 @@
+# Intended Use
+This script enables system administrators to configure some of the Azure AD Conditional Access policies that are commonly deployed as part of the Steel Root Reference Architecture, an optimized system design built on Microsoft 365 GCC High that is purpose-built for meeting the CUI safeguarding requirements in DFARS 252.204-7012 and preparing for CMMC Level 3.
+
+Some of the policies configured by this script may not apply to your environment (e.g., do not deploy the Zscaler policy if you are not using Zscaler); the script will prompt you before configuring each policy so you can select just the policies that apply to your use case.
+
+This script is provided "as is" and you should consult a qualified advisor to help you navigate your specific compliance requirements. For more information on the Steel Root Reference Architecture, contact us at info@steelroot.us.
+
 # Requirements
 * Account running script must be have the [Security Administrator or Global Administrator role in AAD](https://docs.microsoft.com/en-us/azure/active-directory/roles/delegate-by-task#security---conditional-access).
 * You have at least one "[break glass](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-emergency-access)" admin account(s) in a group, following Microsoft's best practice. 
-  * This group will be excluded from all CA policies. These accounts are to be used for emergencies only, and should have an extremely long, generated
-  * If you don't have this group configured prior to running the script, it will pause and allow you to do so.
+  * This group will be excluded from all CA policies. These accounts are to be used for emergencies only, and should have an extremely long, generated password.
+  * If you don't have this group configured prior to running the script, it will pause and allow you to configure the group beofre proceeding.
 * Assumes the script is in a folder which contains locations and policies subfolders in the same directory.
 
 # Overview
@@ -28,7 +35,7 @@
     * Block access from Windows Phone devices
     * Block Non-Zscaler Connections
     * Block use of legacy protocols
-    * Block Web Client for Azure Virtual Desktop -- (Will fail if AVD is not already configured)
+    * Block web client for Azure Virtual Desktop -- (Will fail if AVD is not already configured)
     * Require device compliance on Android and iOS
     * Require device compliance on Windows 10
     * Require MFA for all internal users on all cloud apps
