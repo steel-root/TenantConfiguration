@@ -30,11 +30,15 @@ Finally, filter only results where the last log has been more than 72 hours ago.
 ## Modification
 If 72 hours does not make sense for your environment, you can modify this setting. In the last line, modify ```72``` to a number that is more appropriate for your environment.  ```| where lastlog >=72```
 > ⚠ If this query is changed to a number greater than 168, ensure you're also modifying the second line of each query to expand the logs being evaluated.
+
 # License
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
