@@ -1,0 +1,216 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspace": {
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/07f544e9-8b2f-4204-a67f-d71e482cbca7')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/07f544e9-8b2f-4204-a67f-d71e482cbca7')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2021-09-01-preview",
+            "properties": {
+                "displayName": "Monitor Azure Activity (AzureActivity) Sentinel Connector",
+                "description": "This rule actively monitors the Azure Activity Sentinel connector's AzureActivity table. It triggers an alert if there has not been logs generated in the last 72 hours.",
+                "severity": "Medium",
+                "enabled": true,
+                "query": "AzureActivity\r\n| where TimeGenerated > ago(7d)\r\n| summarize lastlog=datetime_diff(\"Hour\", now(), max(TimeGenerated)) by Type\r\n| where lastlog >= 72",
+                "queryFrequency": "P1D",
+                "queryPeriod": "P5D",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "P1D",
+                "suppressionEnabled": true,
+                "tactics": [],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT5H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": null,
+                "entityMappings": null
+            }
+        },
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/70d43c39-f2a4-46e8-b27a-d98b4e4e83b1')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/70d43c39-f2a4-46e8-b27a-d98b4e4e83b1')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2021-09-01-preview",
+            "properties": {
+                "displayName": "Monitor Azure AD (AuditLogs) Sentinel Connector",
+                "description": "This rule actively monitors the Azure AD Sentinel connector's AuditLog table. It triggers an alert if there has not been logs generated in the last 72 hours.",
+                "severity": "Medium",
+                "enabled": true,
+                "query": "AuditLogs\r\n| where TimeGenerated > ago(7d)\r\n| summarize lastlog=datetime_diff(\"Hour\", now(), max(TimeGenerated)) by Type\r\n| where lastlog >= 72",
+                "queryFrequency": "P1D",
+                "queryPeriod": "P5D",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "P1D",
+                "suppressionEnabled": true,
+                "tactics": [],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT5H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": null,
+                "entityMappings": null
+            }
+        },
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/155bb819-713b-4817-b72b-a01c9665475b')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/155bb819-713b-4817-b72b-a01c9665475b')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2021-09-01-preview",
+            "properties": {
+                "displayName": "Monitor Azure AD (SigninLogs) Sentinel Connector",
+                "description": "This rule actively monitors the Azure AD Sentinel connector's SigninLogs table. It triggers an alert if there has not been logs generated in the last 72 hours.",
+                "severity": "Medium",
+                "enabled": true,
+                "query": "SigninLogs\r\n| where TimeGenerated > ago(7d)\r\n| summarize lastlog=datetime_diff(\"Hour\", now(), max(TimeGenerated)) by Type\r\n| where lastlog >= 72",
+                "queryFrequency": "P1D",
+                "queryPeriod": "P5D",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "P1D",
+                "suppressionEnabled": true,
+                "tactics": [],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT5H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": null,
+                "entityMappings": null
+            }
+        },
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/dfbe28a6-565c-4317-af31-f65dfdb23010')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/dfbe28a6-565c-4317-af31-f65dfdb23010')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2021-09-01-preview",
+            "properties": {
+                "displayName": "Monitor Office 365 (OfficeActivity) Connector",
+                "description": "This rule actively monitors the Office365 Sentinel connector's OfficeActivity table. It triggers an alert if there has not been logs generated in the last 72 hours.",
+                "severity": "Medium",
+                "enabled": true,
+                "query": "OfficeActivity\r\n| where TimeGenerated > ago(7d)\r\n| summarize lastlog=datetime_diff(\"Hour\", now(), max(TimeGenerated)) by Type\r\n| where lastlog >= 72",
+                "queryFrequency": "P1D",
+                "queryPeriod": "P5D",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "P1D",
+                "suppressionEnabled": true,
+                "tactics": [],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT5H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": null,
+                "entityMappings": null
+            }
+        },
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a4aca780-3721-4c13-8918-72ff5f4ab54c')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a4aca780-3721-4c13-8918-72ff5f4ab54c')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2021-09-01-preview",
+            "properties": {
+                "displayName": "Monitor Security Events via Legacy Agent (SecurityEvent) Connector",
+                "description": "This rule actively monitors the Security Events via Legacy Agent Sentinel connector's SecurityEvent table. It triggers an alert if there have not been logs generated in the last 72 hours.",
+                "severity": "Medium",
+                "enabled": true,
+                "query": "SecurityEvent\r\n| where TimeGenerated > ago(7d)\r\n| summarize lastlog=datetime_diff(\"Hour\", now(), max(TimeGenerated)) by Type\r\n| where lastlog >= 72",
+                "queryFrequency": "P1D",
+                "queryPeriod": "P5D",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "P1D",
+                "suppressionEnabled": true,
+                "tactics": [],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT5H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": null,
+                "entityMappings": null
+            }
+        }
+    ]
+}
