@@ -11,7 +11,7 @@
 			- Read: for viewing Uninstall Token.
 			- Write: for POSTing computername to API, which returns CS HostID
 	- Secure variables defined in Nerdio
-    - CsUninstallTool - The URI to a CsUninstallTool.exe file. Ensure this path is accessible to the host VM.
+	  - CsUninstallTool - The URI to a CsUninstallTool.exe file. Ensure this path is accessible to the host VM.
 	  - CsApiClientId - API Client ID from CrowdStrike.
 	  - CsApiClientSecret - API Client Secret from CrowdStrike.
 	
