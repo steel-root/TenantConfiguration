@@ -1,13 +1,12 @@
 {
     "id":  "9ed995fd-0621-44b4-b940-ee861c9a8dfd",
-    "displayName":  "Block access from Android devices",
+    "displayName":  "Block access from non-standard devices",
     "createdDateTime":  "2021-08-18T21:32:50.0921745Z",
     "modifiedDateTime":  null,
-    "state":  "disabled",
+    "state":  "enabled",
     "sessionControls":  null,
     "conditions":  {
                        "signInRiskLevels":  [
-
                                             ],
                        "clientAppTypes":  [
                                               "all"
@@ -19,13 +18,10 @@
                                                                         "All"
                                                                     ],
                                             "excludeApplications":  [
-
                                                                     ],
                                             "includeUserActions":  [
-
                                                                    ],
                                             "includeAuthenticationContextClassReferences":  [
-
                                                                                             ]
                                         },
                        "users":  {
@@ -33,27 +29,28 @@
                                                           "All"
                                                       ],
                                      "excludeUsers":  [
-
                                                       ],
                                      "includeGroups":  [
-
                                                        ],
                                      "excludeGroups":  [
                                                            "{{BREAKGLASS_ADMIN_GROUP}}"
                                                        ],
                                      "includeRoles":  [
-
                                                       ],
                                      "excludeRoles":  [
-
                                                       ]
                                  },
                        "platforms":  {
                                          "includePlatforms":  [
-                                                                  "android"
+                                                                  "All"
                                                               ],
                                          "excludePlatforms":  [
-
+                                                                  "android",
+                                                                  "iOS",
+                                                                  "windows",
+                                                                  "windowsPhone",
+                                                                  "macOS",
+                                                                  "linux"
                                                               ]
                                      }
                    },
@@ -63,10 +60,8 @@
                                                   "block"
                                               ],
                           "customAuthenticationFactors":  [
-
                                                           ],
                           "termsOfUse":  [
-
                                          ]
                       }
 }
